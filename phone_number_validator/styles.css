@@ -1,0 +1,225 @@
+body{
+
+    background-color: rgb(31, 60, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.outer-box{
+    width: 90%;
+    height: 90%;
+    background-color: #2e5950;
+    border-radius: 20px;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.3) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+#title{
+    position: absolute;
+    top: 2%;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#description{
+    position: absolute;
+    top: 7%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    }
+#note{
+    position: absolute;
+    top: 90%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    }
+
+.phone-box{
+    width: 15%;
+    height: 55%;
+    background-color: rgba(21, 21, 19, 0.89);
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border : 3px solid silver;
+
+}
+
+.top-island{
+    width: 20%;
+    height: 2%;
+    /*background-color: rgba(0, 0, 0, 0.72);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+
+    border-bottom: 2px solid silver;
+    border-radius:10px;
+
+}
+
+.camera{
+    width: 15%;
+    height: 80%;
+    background-color: rgba(20, 49, 106, 0.61);
+    border-radius: 50%;
+    position: relative;
+    left: 30%;
+}
+
+.screen{
+    width: 220px;
+    height: 160px;
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.stripe-horizontal{
+    width: 220px;
+    height: 2px;
+    background-color: rgb(184, 182, 182);
+    position: absolute;
+    top: 58%;
+
+}
+
+.stripe-vertical{
+    width: 2px;
+    height: 42px;
+    background-color: rgb(184, 182, 182);
+    position: absolute;
+    top: 58%;
+
+
+}
+#phoneForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    position: relative;
+    top: -20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    position: relative;
+    bottom: -28px;
+    /*top: -10px;*/
+}
+
+#check-btn{
+    position: relative;
+    right: -30px;
+}
+
+#clear-btn{
+    position: relative;
+    left: -22px;
+}
+
+button{
+    border:none;
+    color: #1f6fc7;
+    font-weight: bold;
+    background:none;
+    font-size: 1rem ;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    color: #104e8b;
+}
+
+#user-input{
+    position: relative;
+    top: -10px;
+    width: 180px;
+    height: 40px;
+    outline: none;
+    border: 2px solid silver;
+    box-sizing: border-box;
+}
+
+#user-input::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+}
+
+#user-input:hover{
+    border: 4px solid silver;
+    border-radius: 10px;
+    outline: none;
+}
+
+#user-input:focus{
+    border: 4px solid silver;
+    border-radius: 10px;
+    outline: none;
+}
+
+#results{
+    position: absolute;
+    top: 90%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+
+}
+
+.hidden{
+    display: none;
+}
+
+#results-div{
+    position: absolute;
+    top: 80%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    width: 300px;
+    text-align: center;
+    
+}
