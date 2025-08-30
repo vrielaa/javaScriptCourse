@@ -8,7 +8,7 @@
 }
 body {
 
-    background-color: #f4f4f4;
+    background-color: #d5afa3;
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -18,7 +18,19 @@ body {
     justify-content: center;
 
 }
-
+.inner-box{
+    width: 60vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px -6px rgba(0,0,0,0.25);
+    background-color: rgb(211, 187, 180);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
 .header{
 
     display: flex;
@@ -26,8 +38,55 @@ body {
     justify-content: center;
     position: relative;
 
+
 }
 
+.customer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+input{
+    width: 200px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15) inset, 0 1.5px 0 0 #fff8 inset;
+    background: linear-gradient(180deg, #e6e3db 0%, #e4e0d7 100%);
+    color: #333;
+    outline: none;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+#purchase-btn{
+    width: 150px;
+    height: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15) inset, 0 1.5px 0 0 #fff8 inset;
+    background: linear-gradient(180deg, #e8c208 0%, #d5af3a 100%);
+    color: #2c2929;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+#purchase-btn:hover{
+    background: linear-gradient(180deg, #f3d737 0%, #e5b93e 100%);
+}
+
+#purchase-btn:active {
+    box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.15) inset, 0 1.5px 0 0 #fff8 inset;
+    transform: translateY(2px);
+
+}
 .register, .total-container, .change-info-container, .buttons-container, .drawer-container, .neck,.bottom-part-container{
     border: solid  2px #ccc;
 }
@@ -70,12 +129,14 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #333;
+    color: #631b1b;
     border: none;
     box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15) inset, 0 1.5px 0 0 #fff8 inset;
     position: relative;
     overflow: hidden;
 }
+
+
 
 .total-display::after {
     content: "";
@@ -125,6 +186,7 @@ body {
     border: none;
     box-shadow: 0 8px 24px -6px rgba(0,0,0,0.18), 0 2px 8px 0 #fff2 inset;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .change-display {
@@ -141,6 +203,39 @@ body {
     box-shadow: 0 4px 12px -2px rgba(0,0,0,0.15) inset, 0 1.5px 0 0 #fff8 inset;
     position: relative;
     overflow: hidden;
+    flex-direction: row;
+    gap:10px
+}
+
+#change-in-drawer{
+    font-size:0.8rem;
+    color: #555;
+    position: relative;
+    width: 40%;
+    height: 80%;
+    background: #ffffff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+
+}
+
+#change-due{
+    font-size: 1.2rem;
+    color: #555;
+    position: relative;
+
+    width: 50%;
+    height: 80%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
 }
 
 .change-display::after {
