@@ -68,7 +68,7 @@ fetch(urlAll)
         creatureDataArr = data;
         console.log(creatureDataArr);
     })
-    .catch((err) => {
+    .catch(() => {
         alert('There was an error loading the creature data');
     });
 
